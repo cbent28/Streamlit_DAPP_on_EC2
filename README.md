@@ -103,11 +103,10 @@ The source code is saved in the st1.py file. You can view the files in the repos
 6. We can now run the app with the following commands:
 
 ```
-streamlit run st1.py
+streamlit run app.py
 ```
 
 
 Congragulations! Our stock price data app is running on an EC2 instance and can be accessed from any where through a web browser.
 
-Enter the external URL in your web browser and you will see the app is running. Here is a short screen recording of the app saved in a web browser.
-
+Enter the external URL in your web browser and you will see the app is running!
