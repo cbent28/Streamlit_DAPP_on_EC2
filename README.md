@@ -117,10 +117,12 @@ Enter the repository:
 cd stock-prices-app
 The next step is to install the dependencies:
 
+""
 sudo python3 -m pip install streamlit
 sudo python3 -m pip install pandas
 sudo python3 -m pip install pandas-datareader
 Since this is a simple app, we do not have many dependencies.
+""
 
 The source code is saved in the st1.py file. You can view the files in the repository by typing “ls” in the terminal.
 
