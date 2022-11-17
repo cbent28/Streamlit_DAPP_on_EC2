@@ -79,14 +79,10 @@ sudo yum install git
 
 Then paste it in the terminal after “git clone”:
 ```
-git clone https://github.com/SonerYldrm/stock-prices-app.git
+git clone git@github.com:cbent28/Streamlit_DAPP_on_EC2.git
 ```
 
-4. Enter the repository:
-
-```
-cd stock-prices-app
-```
+4. Navigate to the repository in your terminal.
 
 5. The next step is to install the dependencies:
 
@@ -98,7 +94,7 @@ sudo python3 -m pip install pandas-datareader
 
 Since this is a simple app, we do not have many dependencies.
 
-The source code is saved in the st1.py file. You can view the files in the repository by typing “ls” in the terminal.
+The source code is saved in the app.py file. You can view the files in the repository by typing “ls” in the terminal.
 
 6. We can now run the app with the following commands:
 
