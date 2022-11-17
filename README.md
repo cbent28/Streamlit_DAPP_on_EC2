@@ -101,17 +101,25 @@ We are ready to upload the source code and dependencies on the instance.
 
 This EC2 instance has Python 2.7 pre-installed but we need Python 3.6 or a later version for Streamlit. The following command will install Python 3.
 
+```
 sudo yum install python3
+```
+
 We will clone the source code from a Github repository so we will install git.
 
+```
 sudo yum install git
+```
+
 We can now clone the repository in our EC2 instance. Copy the address of the repository:
 
 
 (image by author)
 Then paste it in the terminal after “git clone”:
-
+```
 git clone https://github.com/SonerYldrm/stock-prices-app.git
+```
+
 Enter the repository:
 
 ```
@@ -125,14 +133,16 @@ sudo python3 -m pip install streamlit
 sudo python3 -m pip install pandas
 sudo python3 -m pip install pandas-datareader
 ```
-Since this is a simple app, we do not have many dependencies.
 
+Since this is a simple app, we do not have many dependencies.
 
 The source code is saved in the st1.py file. You can view the files in the repository by typing “ls” in the terminal.
 
 We can now run the app with the following commands:
 
+```
 streamlit run st1.py
+```
 
 (image by author)
 Congragulations! Our stock price data app is running on an EC2 instance and can be accessed from any where through a web browser.
