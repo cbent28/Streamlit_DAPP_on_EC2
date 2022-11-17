@@ -117,7 +117,7 @@ Enter the repository:
 cd stock-prices-app
 The next step is to install the dependencies:
 
-```json
+```
 sudo python3 -m pip install streamlit
 sudo python3 -m pip install pandas
 sudo python3 -m pip install pandas-datareader
