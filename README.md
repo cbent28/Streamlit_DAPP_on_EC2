@@ -1,6 +1,6 @@
 # Streamlit_DAPP_on_EC2
 
-Deploying a Data App on AWS for Free
+Deploying an EC2 instance to run a streamlit DAPP
 ===================================
 
 ## Step 1: Launch an instance<a name="ec2-launch-instance"></a>
