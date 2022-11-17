@@ -107,6 +107,6 @@ streamlit run app.py
 ```
 
 
-Congragulations! Our stock price data app is running on an EC2 instance and can be accessed from any where through a web browser.
+Congragulations! Our app is running on an EC2 instance and can be accessed from any where through a web browser.
 
 Enter the external URL in your web browser and you will see the app is running!
