@@ -50,61 +50,47 @@ There are several ways to connect to your Linux instance\. For more information,
 **Important**  
 You can't connect to your instance unless you launched it with a key pair for which you have the `.pem` file and you launched it with a security group that allows SSH access from your computer\.
 
-On EC2 dashboard, click on the instance ID to view the instance details. Copy the IP address of the EC2 instance (IPv4 Public IP).
+1. On EC2 dashboard, click on the instance ID to view the instance details. Copy the IP address of the EC2 instance (IPv4 Public IP).
+
+2. Next Open your terminal
+
+3. Then paste it in the Host Name box after typing “ec2-user@” as below:
+
+4. Then select Connection -> SSH -> Auth -> Browse and upload the ppk file.
+
+5. Do not click on “Open” yet. The next step is to give your session a name. Click on “Session” and type the name in the “Saved Sessions” box and save it.
+
+6. Now we can click on “Open” to connect to the instance.
 
 
-(image by author)
-Then paste it in the Host Name box after typing “ec2-user@” as below:
+## Step 3: Upload the source code and dependencies on the instance.
 
-
-(image by author)
-Then select Connection -> SSH -> Auth -> Browse and upload the ppk file.
-
-
-(image by author)
-Do not click on “Open” yet. The next step is to give your session a name. Click on “Session” and type the name in the “Saved Sessions” box and save it.
-
-
-(image by author)
-Now we can click on “Open” to connect to the instance.
-
-
-(image by author)
-We are now connected to our instance. Putty will open up a terminal as below:
-
-
-(image by author)
-Running the app on EC2 instance
-We are ready to upload the source code and dependencies on the instance.
-
-This EC2 instance has Python 2.7 pre-installed but we need Python 3.6 or a later version for Streamlit. The following command will install Python 3.
+1. This EC2 instance has Python 2.7 pre-installed but we need Python 3.6 or a later version for Streamlit. The following command will install Python 3.
 
 ```
 sudo yum install python3
 ```
 
-We will clone the source code from a Github repository so we will install git.
+2. We will clone the source code from a Github repository so we will install git.
 
 ```
 sudo yum install git
 ```
 
-We can now clone the repository in our EC2 instance. Copy the address of the repository:
+3. We can now clone the repository in our EC2 instance. Copy the address of the repository:
 
-
-(image by author)
 Then paste it in the terminal after “git clone”:
 ```
 git clone https://github.com/SonerYldrm/stock-prices-app.git
 ```
 
-Enter the repository:
+4. Enter the repository:
 
 ```
 cd stock-prices-app
 ```
 
-The next step is to install the dependencies:
+5. The next step is to install the dependencies:
 
 ```
 sudo python3 -m pip install streamlit
@@ -116,13 +102,13 @@ Since this is a simple app, we do not have many dependencies.
 
 The source code is saved in the st1.py file. You can view the files in the repository by typing “ls” in the terminal.
 
-We can now run the app with the following commands:
+6. We can now run the app with the following commands:
 
 ```
 streamlit run st1.py
 ```
 
-(image by author)
+
 Congragulations! Our stock price data app is running on an EC2 instance and can be accessed from any where through a web browser.
 
 Enter the external URL in your web browser and you will see the app is running. Here is a short screen recording of the app saved in a web browser.
