@@ -1,5 +1,3 @@
-# Streamlit_DAPP_on_EC2
-
 Deploying an EC2 instance to run a streamlit DAPP
 ===================================
 
